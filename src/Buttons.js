@@ -1,15 +1,21 @@
 import React from "react";
 import "./App.css";
 
-function Buttons(props) {
-    // const {drawOrNot} = props;
-  return (
-    <>
-      <button onClick={() => drawOrNot("Rock")}>Rock</button>
-      <button onClick={() => drawOrNot("Paper")}>Paper</button>
-      <button onClick={() => drawOrNot("Scissors")}>Scissors</button>
-    </>
-  );
+class Buttons extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <>
+        <button onClick={() => this.props.drawOrNot("Rock")}>Rock</button>
+        <button onClick={() => this.props.drawOrNot("Paper")}>Paper</button>
+        <button onClick={() => this.props.drawOrNot("Scissors")}>
+          Scissors
+        </button>
+      </>
+    );
+  }
 }
 
 export default Buttons;

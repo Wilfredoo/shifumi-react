@@ -6,7 +6,7 @@ import "./App.css";
 function GameLogic() {
   const [playerScore, setPlayerScore] = useState(0);
   const [computerScore, setComputerScore] = useState(0);
-  const [draw, setDraw] = useState(false);
+  const [draw, setDraw] = useState(0);
   const elements = ["Rock", "Paper", "Scissors"];
 
   const generateComputerChoice = () => {

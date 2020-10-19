@@ -1,12 +1,14 @@
-import React from "react";
-import GameLogic from "./GameLogic"
+import React, {Component} from "react";
+import GameLogic from "./GameLogic";
 
-function App() {
-  return (
-    <div className="App">
-     <GameLogic />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <GameLogic />
+      </div>
+    );
+  }
 }
 
 export default App;

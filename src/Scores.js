@@ -1,15 +1,20 @@
 import React from "react";
 import "./App.css";
 
-function Scores(props) {
-  const { playerScore, computerScore, draw } = props;
-  return (
-    <>
-      <p>Player Score: {playerScore}</p>
-      <p>Computer Score: {computerScore}</p>
-      {draw && <p>It's a draw</p>}
-    </>
-  );
+class Scores extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  // const { playerScore, computerScore, draw } = props;
+  render() {
+    return (
+      <>
+        <p>Player Score: {this.props.playerScore}</p>
+        <p>Computer Score: {this.props.computerScore}</p>
+        {this.props.draw && <p>It's a draw</p>}
+      </>
+    );
+  }
 }
 
 export default Scores;
