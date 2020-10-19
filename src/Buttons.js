@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 
 function Buttons(props) {
-    // const {drawOrNot} = props;
+    const {drawOrNot} = props;
   return (
     <>
       <button onClick={() => drawOrNot("Rock")}>Rock</button>
